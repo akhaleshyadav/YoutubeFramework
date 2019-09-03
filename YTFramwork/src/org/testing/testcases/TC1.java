@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testing.POM.Login;
+import org.testing.Utilities.Logs;
 import org.testing.Utilities.Screenshots;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -36,7 +37,7 @@ public class TC1 extends Base{
 			  Thread.sleep(5000);
 			  Screenshots.takeScreenshots(driver , "D:\\Automation\\Selenium_Workspace\\YTFramwork\\Screenshots\\Trending.jpeg");
 			System.out.println("Test");
-	  
+	  Logs.Takelog("TC1", "Trending clicked successfully");
   }
 
 }
